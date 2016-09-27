@@ -44,7 +44,9 @@ window.cs = {
 	pE: function(arg){ 
 		return console.profileEnd(arg); 
 	},
-	t: function(){ return console.table.apply(console, arguments); },
+	t: function(){ 
+		return console.table.apply(console, arguments); 
+	},
 	ti: function(arg){ 
 		return console.time(arg); 
 	},
