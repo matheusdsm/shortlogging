@@ -1,5 +1,3 @@
-# a simple shortcaller for console methods.
-
 # shortlogging.js shortify console methods.
 Thinking about how time spend writing 'console.log' everytime is terrible, shortlogging comes to simplify this.
 
