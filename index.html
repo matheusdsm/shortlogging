@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shortlogging.js</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300">
+	<style>
+		*{box-sizing: border-box;}
+		*::before{box-sizing: border-box;}
+		*::after{box-sizing: border-box;}
+		body{
+			margin: 0;
+			text-align: center;
+			font-size: 100%;
+			padding: 0;
+		}
+		*{
+			font-family: Segoe UI;
+		}
+		.main-header::before{
+			content: '';
+			display: table;
+			width: calc(100% + 15px);
+			height: 10px;
+			background: rgba(0, 0, 0, .1);
+			position: relative;
+			right: 10px;
+			top: 255px;
+		}
+		.main-header{
+			background: #fd746c; /* fallback for old browsers */
+		    background: -webkit-linear-gradient(right, #fd746c, #ff9068);
+		    background: -o-linear-gradient(right, #fd746c, #ff9068);
+		    background: linear-gradient(to left, #fd746c, #ff9068); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			width: 100%;
+			height: 270px;
+			position: relative;
+			padding: 5px;
+		}
+		.header{
+			max-width: 700px;
+			margin: 0 auto;
+		}
+		.header *{
+			color: #fff;
+		}
+		.title{
+			text-align: left;
+		}
+		.title h1{
+			font-weight: 900;
+			letter-spacing: 5px;
+			text-shadow: 0 4px 2px rgba(0, 0, 0, .15);
+			font-size: 70px;
+		}
+		.subtitle{
+			text-align: left;
+		}
+		.subtitle h2{
+			font-weight: 300;
+			margin: -30px 0;
+			letter-spacing: 1.5px;
+		}
+		.content{
+
+		}
+		.content-clear{
+			text-align: left;
+			max-width: 700px;
+			margin: 0 auto;
+		}
+		.content-header h1{
+			font-weight: 300;
+			letter-spacing: 2.5px;
+		}
+		.content-header h2{
+			font-weight: 300;
+			letter-spacing: 1px;
+		}
+		.code-snippet{
+			background: #eee;
+			border-left: 7px #fd746c solid;
+			padding: 1rem;
+		}
+		.code-snippet *{
+			font-family: 'Roboto Mono';
+			font-size: 19px;
+			font-weight: 300;
+		}
+		hr{
+			border: none;
+			height: 2px;
+			background: #fd746c;
+		}
+		.object{color: #3F51B5;}
+		.method, .dot{color: #EF6C00;}
+		.braces{color: #FFA726;}
+		.string{color: #00C853;}
+		@media screen and (max-width: 540px){
+			body{
+				font-size: 90%;
+				padding: .5rem;
+			}
+			.title h1{
+				font-size: 37px;
+				margin: 3rem .5rem;
+			}
+			.subtitle h2{
+				margin: -30px .5rem;
+			}
+			.main-header{
+				right: .5rem;
+				width: 105%;
+				bottom: .5rem;
+			}
+			.header{
+				max-width: 450px;
+			}
+		}
+	</style>
+</head>
+<body>
+	
+<div class="main-header">	
+	<div class="header">
+		<div class="title">
+			<h1>shortlogging.js</h1>
+		</div>
+		<div class="subtitle">
+			<h2>a simple shortcaller for console methods.</h2>
+		</div>
+	</div>
+</div>
+
+<div class="content">
+	<div class="content-clear">
+
+		<div class="content-header">
+			<h1>Increases your workflow.</h1>
+			<h2>shortlogging.js shortify console methods, e.g:</h2>
+		</div>
+		<div class="code-snippet">
+			<div class="code">
+				<span class='object'>cs</span><span class='dot'>.</span><span class='method'>l</span><span class='braces'>(</span><span class='string'>'console.log'</span><span class='braces'>)</span>
+			</div>
+		</div>
+		
+		<div class="content-header">
+			<h1>It's highly recommended to use this only in development.</h1>
+		</div>
+
+		<div class="content-header">
+			<h1>Just paste this link to your project to make works.</h1>
+			<h2>https://blablabla.com/bla</h2>
+		</div>
+
+		<hr>
+
+		<div class="content-header">
+			<h1>console.assert</h1>
+			<div class="code-snippet">
+			<div class="code">
+				<span class='object'>cs</span><span class='dot'>.</span><span class='method'>a</span><span class='braces'>(</span><span class='string'>'console.assert'</span><span class='braces'>)</span>
+			</div>
+			</div>
+		</div>
+
+		<div class="content-header">
+			<h1>console.clear</h1>
+			<div class="code-snippet">
+			<div class="code">
+				<span class='object'>cs</span><span class='dot'>.</span><span class='method'>c</span><span class='braces'>(</span><span class='string'></span><span class='braces'>)</span>
+			</div>
+			</div>
+		</div>
+
+		<div class="content-header">
+			<h1>And a bit more...</h1>
+		</div>
+
+	</div>	
+</div>
+
+</body>
+</html>
