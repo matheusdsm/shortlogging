@@ -5,6 +5,7 @@
 	<title>shortlogging.js</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 	<style>
 		*{box-sizing: border-box;}
 		*::before{box-sizing: border-box;}
@@ -16,7 +17,7 @@
 			padding: 0;
 		}
 		*{
-			font-family: Segoe UI;
+			font-family: Segoe UI, sans-serif;
 		}
 		.main-header::before{
 			content: '';
@@ -45,17 +46,23 @@
 		.header *{
 			color: #fff;
 		}
-		.title{
+		.title, .subtitle, .gh{
 			text-align: left;
+		}
+		.gh{
+			margin: 3rem -10px;
+		}
+		.gh a{
+			font-size: 18px;
+			padding: 10px;
+			text-decoration: none;
+			border-bottom: 1px #fff solid;
 		}
 		.title h1{
 			font-weight: 900;
 			letter-spacing: 5px;
 			text-shadow: 0 4px 2px rgba(0, 0, 0, .15);
 			font-size: 70px;
-		}
-		.subtitle{
-			text-align: left;
 		}
 		.subtitle h2{
 			font-weight: 300;
@@ -70,9 +77,13 @@
 			max-width: 700px;
 			margin: 0 auto;
 		}
-		.content-header h1{
+		.content-header h1, .content-important h1{
 			font-weight: 300;
 			letter-spacing: 2.5px;
+		}
+		.orange{
+			color: #fd746c;
+			font-size: 50px;
 		}
 		.content-header h2{
 			font-weight: 300;
@@ -109,6 +120,9 @@
 			.subtitle h2{
 				margin: -30px .5rem;
 			}
+			.gh{
+				margin: 3rem -2.5px;
+			}
 			.main-header{
 				right: .5rem;
 				width: 105%;
@@ -130,6 +144,9 @@
 		<div class="subtitle">
 			<h2>a simple shortcaller for console methods.</h2>
 		</div>
+		<div class="gh">
+			<a href="https://github.com/matheusdsm/shortlogging" target="_blank">github.com/matheusdsm/shortlogging</a>
+		</div>
 	</div>
 </div>
 
@@ -146,8 +163,11 @@
 			</div>
 		</div>
 		
-		<div class="content-header">
-			<h1>It's highly recommended to use this only in development.</h1>
+		<div class="content-important">
+			<h1 class='orange'>important!</h1>
+			<h1>It's higly recommended to use this only in development.</h1>
+			<h1>For perfect work don't use any 'cs' variable.</h1>
+			<hr>
 		</div>
 
 		<div class="content-header">
@@ -156,9 +176,13 @@
 		</div>
 
 		<hr>
+		
+		<div class="content-header">
+			<h1>Mini Documentation.</h1>
+		</div>
 
 		<div class="content-header">
-			<h1>console.assert</h1>
+			<h2>console.assert</h2>
 			<div class="code-snippet">
 			<div class="code">
 				<span class='object'>cs</span><span class='dot'>.</span><span class='method'>a</span><span class='braces'>(</span><span class='string'>'console.assert'</span><span class='braces'>)</span>
@@ -167,7 +191,7 @@
 		</div>
 
 		<div class="content-header">
-			<h1>console.clear</h1>
+			<h2>console.clear</h2>
 			<div class="code-snippet">
 			<div class="code">
 				<span class='object'>cs</span><span class='dot'>.</span><span class='method'>c</span><span class='braces'>(</span><span class='string'></span><span class='braces'>)</span>
@@ -175,6 +199,15 @@
 			</div>
 		</div>
 
+		<div class="content-header">
+			<h2>console.dir</h2>
+			<div class="code-snippet">
+			<div class="code">
+				<span class='object'>cs</span><span class='dot'>.</span><span class='method'>d</span><span class='braces'>(</span><span class='string'>'console.dir'</span><span class='braces'>)</span>
+			</div>
+			</div>
+		</div>
+		
 		<div class="content-header">
 			<h1>And a bit more...</h1>
 		</div>
