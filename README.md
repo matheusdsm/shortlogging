@@ -1,4 +1,6 @@
-# shortlogging.js shortify console methods
+![https://matheusdsm.github.io/shortlogging](https://raw.githubusercontent.com/matheusdsm/shortlogging/master/brand/logo%20fireworks%20editable.fw.png)
+
+# shortify console methods
 Thinking about how time spend writing 'console.log' everytime is terrible, shortlogging comes to simplify this.
 
 ![Version](https://img.shields.io/badge/version-v1.0.0-blue.svg)
