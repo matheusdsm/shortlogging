@@ -1,4 +1,4 @@
-![https://matheusdsm.github.io/shortlogging](https://raw.githubusercontent.com/matheusdsm/shortlogging/master/brand/logo%20fireworks%20editable.fw.png)
+
 
 # shortify console methods
 Thinking about how time spend writing 'console.log' everytime is terrible, shortlogging comes to simplify this.
@@ -6,6 +6,8 @@ Thinking about how time spend writing 'console.log' everytime is terrible, short
 ![Version](https://img.shields.io/badge/version-v1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
+
+![logo](https://raw.githubusercontent.com/matheusdsm/shortlogging/master/brand/logo%20fireworks%20editable.fw.png)
 
 # the basic
 cs.l('console.log equivalent') <br><br>
