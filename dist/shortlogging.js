@@ -3,63 +3,32 @@
 // Developed by Matheus S. Mariano
 // Licensed under MIT License
 
+const cs = {
+  a: console.assert.bind(console),
+  c: console.clear.bind(console),
+  co: console.count.bind(console),
+  d: console.dir.bind(console),
+  dx: console.dirxml.bind(console),
+  e: console.error.bind(console),
+  g: console.group.bind(console),
+  gC: console.groupCollapsed.bind(console),
+  gE: console.groupEnd.bind(console),
+  i: console.info.bind(console),
+  l: console.log.bind(console),
+  p: console.profile.bind(console),
+  pE: console.profileEnd.bind(console),
+  t: console.table.bind(console),
+  ti: console.time.bind(console),
+  tiE: console.timeEnd.bind(console),
+  tiS: console.timeStamp.bind(console),
+  tr: console.trace.bind(console),
+  w: console.warn.bind(console)
+};
 
-window.cs = {
-	a: function(){ 
-		return console.assert.apply(console, arguments); 
-	},
-	c: function(){ 
-		return console.clear(); 
-	},
-	co: function(){ 
-		return console.count(); 
-	},
-	d: function(arg){ 
-		return console.dir(arg); 
-	},
-	dx: function(arg){ 
-		return console.dirxml(arg); 
-	},
-	e: function(arg){ 
-		return console.error(arg); 
-	},
-	g: function(){ 
-		return console.group(); 
-	},
-	gC: function(){ 
-		return console.groupCollapsed(); 
-	},
-	gE: function(){ 
-		return console.groupEnd(); 
-	},
-	i: function(arg){ 
-		return console.info(arg); 
-	},
-	l: function(){ 
-		return console.log.apply(console, arguments); 
-	},
-	p: function(arg){ 
-		return console.profile(arg); 
-	},
-	pE: function(arg){ 
-		return console.profileEnd(arg); 
-	},
-	t: function(){ 
-		return console.table.apply(console, arguments); 
-	},
-	ti: function(arg){ 
-		return console.time(arg); 
-	},
-	tiE: function(arg){ 
-		return console.timeEnd(arg); 
-	},
-	tiS: function(arg){ 
-		return console.timeStamp(arg); 
-	},
-	tr: function(){ 
-		return console.trace(); 
-	},
-	w: function(){ 
-		return console.warn.apply(console, arguments); 
-	}
-}
+// Refatored by AI-Assistant
+
+
+
+
+
+
