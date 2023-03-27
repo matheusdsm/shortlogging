@@ -26,9 +26,3 @@ const cs = {
 };
 
 // Refatored by AI-Assistant
-
-
-
-
-
-
